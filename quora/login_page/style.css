@@ -1,0 +1,401 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-color: cyan;
+}
+
+form{
+    width: 650px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    /* margin-left: 50%; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+h3{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    color: red;
+}
+
+.subtitle{
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.google_login{
+    width: 50%;
+    float: left;
+    background-color: #fff;
+    color: black    ;
+    font-weight: 100;
+    height: 264px;
+    width: 300px;
+    border-right: 2px solid grey;
+}
+
+.email_login{
+    width: 50%;
+    background-color: white;
+    float: right;
+}
+
+h6{
+    margin-left: 10px;
+    font-size: 20px;
+    color: rgb(113, 113, 113);
+    border-bottom: 2px solid rgb(170, 170, 170);
+    display: inline-block;
+    padding-right: 220px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.login{
+    height: 300px;
+}
+
+.terms{
+    margin: 10px;
+    font-size: small;
+    font-weight: 100;
+}
+
+
+/* Google and Facebook Login */
+/* From uiverse.io by @fanishah */
+.button {
+    margin: 0px 20px 10px 20px;
+    font-family: inherit;
+    background-color: #bfe1ffb0;
+    color: white;
+    padding: 0.35em 0;
+    font-size: 17px;
+    border: none;
+    border-radius: 0.7em;
+    letter-spacing: 0.08em;
+    position: relative;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 2.1em;
+    padding-left: 2.8em;
+    padding-right: 0.9em;
+   }
+   
+   .button .icon {
+    background: #fff;
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0.4em;
+    transition: all 0.25s;
+   }
+   
+   .icon svg {
+    /* margin-left: 0.4em; */
+    transition: all 0.5s;
+    color: #2CA0D9;
+    width: 1.2rem;
+    height: 1.2rem;
+   }
+   
+   .button:hover .icon svg {
+    transform: rotate(360deg);
+   }
+   
+   .button:hover .icon {
+    width: calc(100% - 0.85rem);
+    border-radius: 0.5em;
+   }
+
+
+
+
+/* signup */
+
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    margin-top: 20px;
+    margin-left: 25px;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+
+
+/* email */
+
+/* From uiverse.io by @satyamchaudharydev */
+/* From uiverse.io by @Allyhere */
+.email-container {
+    --c-text: rgb(50, 50, 80);
+    --c-bg: rgb(252, 252, 252);
+    --c-outline: rgb(55, 45 , 190);
+    display: grid;
+    gap: 1ch;
+    position: relative;
+    max-width: 190px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+  }
+  
+  .email {
+    padding: 0.5em 0.75em;
+    border-radius: 0.2em;
+    border: 1px solid var(--c-border, currentColor);
+    color: var(--c-text);
+    font-size: 1rem;
+    letter-spacing: 0.1ch;
+    width: 100%;
+  }
+  
+  .email:not(:placeholder-shown) + .email-label {
+    transform: translateY(-220%);
+    opacity: 1;
+  }
+  
+  .email:invalid {
+    --c-border: rgb(230, 85, 60);
+    --c-text: rgb(230, 85, 60);
+    --c-outline: rgb(230, 85, 60);
+  }
+  
+  .email:is(:disabled, :read-only) {
+    --c-border: rgb(150, 150, 150);
+    --c-text: rgb(170, 170, 170);
+  }
+  
+  .email:is(:focus, :focus-visible) {
+    outline: 2px solid var(--c-outline);
+    outline-offset: 2px;
+  }
+  
+  .email-label {
+    --timing: 200ms ease-in;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: transform var(--timing),
+      opacity var(--timing);
+    transform: translateY(-50%);
+    opacity: 0;
+    color: var(--c-text);
+    font-weight: 500;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .email-label {
+      --timing: linear;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .email-container {
+      --c-text: rgb(252, 252, 252);
+      --c-bg: transparent;
+    }
+  }
+
+
+
+  /* password */
+.password-container {
+    --c-text: rgb(50, 50, 80);
+    --c-bg: rgb(252, 252, 252);
+    --c-outline: rgb(55, 45 , 190);
+    display: grid;
+    gap: 1ch;
+    position: relative;
+    max-width: 190px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+  }
+  
+  .password {
+    padding: 0.5em 0.75em;
+    border-radius: 0.2em;
+    border: 1px solid var(--c-border, currentColor);
+    color: var(--c-text);
+    font-size: 1rem;
+    letter-spacing: 0.1ch;
+    width: 100%;
+  }
+  
+  .password:not(:placeholder-shown) + .password-label {
+    transform: translateY(-220%);
+    opacity: 1;
+  }
+  
+  .password:invalid {
+    --c-border: rgb(230, 85, 60);
+    --c-text: rgb(230, 85, 60);
+    --c-outline: rgb(230, 85, 60);
+  }
+  
+  .password:is(:disabled, :read-only) {
+    --c-border: rgb(150, 150, 150);
+    --c-text: rgb(170, 170, 170);
+  }
+  
+  .password:is(:focus, :focus-visible) {
+    outline: 2px solid var(--c-outline);
+    outline-offset: 2px;
+  }
+  
+  .password-label {
+    --timing: 200ms ease-in;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: transform var(--timing),
+      opacity var(--timing);
+    transform: translateY(-50%);
+    opacity: 0;
+    color: var(--c-text);
+    font-weight: 500;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .password-label {
+      --timing: linear;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .passowrd-container {
+      --c-text: rgb(252, 252, 252);
+      --c-bg: transparent;
+    }
+  }
+
+
+/* PASSWORD */
+   /* From uiverse.io by @Yaseen549 */
+
+
+
+
+.input {
+    border: 2px solid #e8e8e8;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #212121;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+   }
+   
+   .input:focus {
+    outline-color: white;
+    background-color: #212121;
+    color: #e8e8e8;
+    box-shadow: 5px 5px #888888;
+   }
+
+
+
+
+   /* Continue after email */
+
+   /* From uiverse.io by @alexmaracinaru */
+.continue {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 4px 20px;
+    border-radius: 100px;
+    background: #cfef00;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-left: 110px;
+    margin-top: 15px;
+  }
+  
+  .continue:hover {
+    background: #c4e201;
+  }
+  
+  .continue > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .continue:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .continue:active {
+    transform: scale(0.95);
+  }
+  
+  
